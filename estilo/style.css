@@ -371,11 +371,13 @@ footer{
     margin-top: 20px;
     border: 2px solid white;
     border-radius: 4px;
+    flex-direction: column;
 
 }
 
 #formulariO{
-    display: inline-block;
+    display:inline-block;
+    flex-direction: column;
 }
 
 /*Inicio de Nosotros*/
