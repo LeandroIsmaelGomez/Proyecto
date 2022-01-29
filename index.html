@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <title>GrowShop</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>GrowShop</title>
 </head>
 
 <body> 
     <header>
         <section>
-            <h1 class="titulo">GrowShoP</h1>
+            <div data-aos="flip-right">
+            <h1 class="titulo">GrowShop</h1>
+        </div>
         </section>
-        <hr>
         <div>
             <nav class="navegacion">
                 <ul>
@@ -44,12 +46,14 @@
             </nav>
         </div>
     </header>
-    <hr>
+
 
     <section>
+        <div data-aos="fade-right">
         <h2 class="fondo">Nuestros productos mas vendidos</h2>
-        <div class="text0">
-            <img class="topvege" src="./imagenes/topvege.jpg" alt="Fertilizante" width="200" height="200">
+    </div>
+        <div data-aos="fade-left" class="text0">
+            <img data-aos="flip-right"  class="topvege" src="./imagenes/topvege.jpg" alt="Fertilizante" width="200" height="200">
             <br>
             <p class="index">Top Veg de Top Crop es un fertilizante líquido destinado, principalmente, para el crecimiento de nuestras
                 plantas. Su composición en ácidos húmicos y fúlvicos favorece además que las plantas refuercen sus
@@ -57,9 +61,8 @@
                 frente a enfermedades y/o plagas. Al igual que ante situaciones de estrés.</p>
         </div>
         <hr>
-        <div class="text0">
-            <img class="melaza" src="./imagenes/melaza.webp" alt="Melaza" width="200" height="200">
-            <br>
+        <div data-aos="fade-left" class="text0">
+            <img data-aos="flip-left" class="melaza" src="./imagenes/melaza.webp" alt="Melaza" width="200" height="200">
             <p class="index">
                 Melaca Dorada es melaza enriquecida con Maca Andina. Activador de Microorganismos benéficos aumentando
                 la biomasa en la tierra mejorando la salud del suelo de cultivo, alimentando con carbohidratos y
@@ -71,8 +74,10 @@
     <hr>
 
     <section>
+        <div data-aos="fade-left">
         <h2 class="ofertas">Combos de fertilizantes</h2>
-        <div>
+        </div>
+        <div data-aos="flip-down">
             <ul class="imagenes">
                 <li>
                     <img src="./imagenes/lineaNamaste.jpg" alt="Namaste" width="250" height="250">
@@ -99,6 +104,10 @@
 
 
     <footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
         <h3 class="futer">Seguinos en nuestras redes</h3>
 
         <ul class="listaFuter">

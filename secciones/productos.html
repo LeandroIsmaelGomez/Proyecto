@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilo/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Productos</title>
 </head>
 
 <body>
     <header>
         <section>
-            <h1 class="titulo">GrowShop</h1>
+            <div data-aos="flip-right">
+                <h1 class="titulo">GrowShop</h1>
+            </div>
         </section>
-        <hr>
         <div>
             <nav class="navegacion">
                 <ul>
@@ -37,13 +39,13 @@
             </nav>
         </div>
     </header>
-    <hr>
+
     <section>
-        <div>
+        <div data-aos="fade-right">
             <h2 class="hdos">Nuestros productos</h2>
         </div>
     </section>
-    <hr>
+
     <section class="grid">  
             <div> 
                 <img class="img1" src="../imagenes/topcandy.jpg" alt="TopCandy" width="230" height="230">
@@ -120,6 +122,10 @@
 
     <hr>
     <footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
         <h3 class="futer">Seguinos en nuestras redes</h3>
 
         <ul class="listaFuter">
