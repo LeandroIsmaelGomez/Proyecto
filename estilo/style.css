@@ -3,18 +3,27 @@ selector{
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 
 /* Inicio de index CSS*/
 
-li{
+.navegacion ul li a{
     /*esto sirve para poner las secciones de lado o imagenes*/
     padding: 20px 20px 20px 20px;
     margin: 20px 20px 20px 20px;
-    display:inline-block;
+    border: 3px solid;
+    color: whitesmoke;
+    border-color: rgb(169, 221, 255);
+}
+
+li{
+    display: inline-block;
 }
 
 
@@ -29,17 +38,14 @@ p{
     color: white;
     font-size: 60px;
     text-align: center;
+    margin-bottom: 25px
 }
 
 
 body{
     background-color: rgb(216, 226, 226);
 }
-nav ul li{
-    background-color: rgb(144, 238, 222);
-    font-style:italic;
-    top: 600px;
-}
+
 
 .index{
     font-style: oblique;
@@ -69,7 +75,9 @@ footer{
     text-align: center;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
-    margin: 10px 10px 10px 10px;
+    margin-top: 40px;
+    border: 3px solid white;
+    border-radius: 4px;
 }
 
 
@@ -78,7 +86,10 @@ footer{
     font-style: oblique;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid whitesmoke;
+    border-radius: 4px;
 }
 
 .color{
@@ -94,7 +105,7 @@ footer{
 
 
 .topvege{
-    margin: 0px 10px 10px 750px;
+    margin: -20px 10px 10px 750px;
     padding: 50px 10px 10px 10px;
     border-radius: 10px;
 }
@@ -137,6 +148,20 @@ footer{
 }
 
 
+/* PRUEBA NUMERO UNO RAMA STYLE ANIMACIONES TRANSICIONES*/
+
+.navegacion ul li a:hover{
+    background-color: green;
+    max-width: 100%;
+    top: 10px;
+    border: 2px solid;
+}
+
+.titulo:hover{
+    
+}
+
+
 
 
 /* Inicio de productos CSS*/
@@ -151,10 +176,13 @@ footer{
 }
 
 .hdos{
-    color: white;
-    margin: 10px 10px 10px;
+    color: white;   
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    border: 3px solid whitesmoke;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .grid{
@@ -265,6 +293,10 @@ footer{
     color: whitesmoke;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border: 3px solid white;
+    border-radius: 4px;
 }
 
 .tienda{
@@ -378,12 +410,21 @@ footer{
     display: inline-block;
 }
 
+.contacto{
+    margin-top: 30px;
+}
+
+.INFO{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*Inicio de Nosotros*/
 
 
 .nosotros{
     font-family: 'Courier New', Courier, monospace;
-    margin: 10px 10px 10px;
+    margin: 30px 10px 10px;
     padding: 10px 10px 10px;
     background-color: rgb(227, 150, 247);
     text-align: center;
@@ -413,7 +454,7 @@ footer{
 }
 
 .localizacion{
-    padding: 10px 10px 10px 850px;
+    padding: 10px 10px 10px 650px;
     text-align: center;
     color:yellowgreen;
     font-family: Arial, Helvetica, sans-serif;
