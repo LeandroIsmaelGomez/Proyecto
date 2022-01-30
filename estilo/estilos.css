@@ -1,0 +1,500 @@
+/*
+selector{
+    propiedad:valor;
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Inicio de index CSS*/
+.navegacion ul li a {
+  /*esto sirve para poner las secciones de lado o imagenes*/
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  border: 3px solid;
+  color: whitesmoke;
+  border-color: #a9ddff;
+}
+
+li {
+  display: inline-block;
+}
+
+p {
+  font-style: oblique;
+}
+
+.titulo {
+  background-image: url("../imagenes/logo.jpg");
+  display: block;
+  width: 100%;
+  left: -700px;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+body {
+  background-color: #d8e2e2;
+}
+
+.index {
+  font-style: oblique;
+  background-color: white;
+  border-radius: 10px;
+  width: 700px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-image: url("../imagenes/fondogrow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navegacion {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+  background-color: royalblue;
+}
+
+.fondo {
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 40px;
+  border: 3px solid white;
+  border-radius: 4px;
+}
+
+.ofertas {
+  color: whitesmoke;
+  font-style: oblique;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid whitesmoke;
+  border-radius: 4px;
+}
+
+.color {
+  color: #e99d9d;
+  font-style: italic;
+}
+
+.colorProducto {
+  color: thistle;
+  font-style: oblique;
+}
+
+.topvege {
+  margin: -20px 10px 10px 750px;
+  padding: 50px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.melaza {
+  padding: 10px 10px 10px 10px;
+  margin: 30px 10px 10px 750px;
+  border-radius: 10px;
+}
+
+strong {
+  color: white;
+}
+
+.imagenes {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.futer {
+  text-align: center;
+}
+
+.listaFuter {
+  font-size: 16px;
+  font-style: oblique;
+  text-align: right;
+}
+
+.listaFuter li a {
+  text-decoration: none;
+
+}
+
+footer {
+  background-image: url("../imagenes/logo.jpg");
+}
+
+.text0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+/* PRUEBA NUMERO UNO RAMA STYLE ANIMACIONES TRANSICIONES*/
+.navegacion ul li a:hover {
+  background-color: green;
+  max-width: 100%;
+  top: 10px;
+  border: 2px solid;
+}
+
+/* Inicio de productos CSS*/
+.colorProducto {
+  color: thistle;
+  font-style: oblique;
+}
+
+.carrito {
+  font-size: 13px;
+}
+
+.hdos {
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  border: 3px solid whitesmoke;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 250px;
+  margin-top: 10px;
+  gap: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "img1 img2 img3"
+ "img4 img5 img6"
+ "img7 img8 img9"
+ "img10 img11 img12";
+}
+
+.img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img1;
+}
+
+.img2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: img12;
+}
+
+.img3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: img3;
+}
+
+.img4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img4;
+}
+
+.img5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img5;
+}
+
+.img6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: img6;
+}
+
+.img7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img7;
+}
+
+.img8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: img8;
+}
+
+.img9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: img9;
+}
+
+.img10 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: img10;
+}
+
+.img11 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: img11;
+}
+
+.img12 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: img12;
+}
+
+/*
+@media only screen and (max-width: 425px) {
+  nav {
+    background-color: white;
+  }
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas: "img1"
+ "img2" 
+ "img3"
+ "img4"
+ "img5" 
+ "img6"
+ "img7"
+ "img8"
+ "img9"
+ "img10"
+ "img11" 
+ "img12";
+  }
+}
+
+*/
+/* Inicio de Parafernalia*/
+.h5 {
+  color: white;
+}
+
+.product {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  border: 3px solid white;
+  border-radius: 4px;
+}
+
+.tienda {
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+  color: violet;
+}
+
+.Grid {
+  margin-top: 10px;
+  margin-left: 230px;
+  gap: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "foto1 foto2 foto3 foto4"
+ "foto5 foto6 foto7 foto8"
+ "foto9 foto10 foto11 foto12"
+ "foto13 foto14 foto15 foto16";
+}
+
+.foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+}
+
+.foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+}
+
+.foto3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: foto3;
+}
+
+.foto4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: foto4;
+}
+
+.foto5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto5;
+}
+
+.foto6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto6;
+}
+
+.foto7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: foto7;
+}
+
+.foto8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: foto8;
+}
+
+.foto9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foto9;
+}
+
+.foto10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: foto10;
+}
+
+.foto11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: foto11;
+}
+
+.foto12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: foto12;
+}
+
+.foto13 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: foto13;
+}
+
+.foto14 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: foto14;
+}
+
+.foto15 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: foto15;
+}
+
+.foto16 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: foto16;
+}
+
+/*Inicio Formulario*/
+.formulario {
+  background-color: #2D3748;
+  color: white;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#formulariO {
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto {
+  margin-top: 30px;
+}
+
+.INFO {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Inicio de Nosotros*/
+.nosotros {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 30px 10px 10px;
+  padding: 10px 10px 10px;
+  background-color: #e396f7;
+  text-align: center;
+}
+
+.parrafoNosotros {
+  margin: 10px 10px 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.ubicacion {
+  padding: 10px 10px 10px;
+  background-color: #e396f7;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.parrafoNosotro {
+  margin: 10px 10px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.localizacion {
+  padding: 10px 10px 10px 650px;
+  text-align: center;
+  color: yellowgreen;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=estilos.css.map */
