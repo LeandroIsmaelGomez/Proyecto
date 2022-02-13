@@ -1,0 +1,36 @@
+.nosotros {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 30px 10px 10px;
+  padding: 10px 10px 10px;
+  background-color: #e396f7;
+  text-align: center;
+}
+
+.parrafoNosotros {
+  margin: 10px 10px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.ubicacion {
+  padding: 10px 10px 10px;
+  background-color: #e396f7;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.parrafoNosotro {
+  margin: 10px 10px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.localizacion {
+  padding: 10px 10px 10px 650px;
+  text-align: center;
+  color: yellowgreen;
+  font-family: 'Courier New', Courier, monospace;
+}
+/*# sourceMappingURL=nosotros.css.map */

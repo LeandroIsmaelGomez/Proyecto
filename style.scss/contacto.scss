@@ -1,0 +1,64 @@
+.formulario {
+  background-color: #2D3748;
+  color: white;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+  flex-direction: column;
+
+}
+
+#formulariO {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.contacto {
+  margin-top: 30px;
+}
+
+.INFO {
+  margin: 10px;
+  padding: 6px 15px 6px 15px;
+  font-size: 30px;
+  color: whitesmoke;
+  
+}
+
+#tittle{
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+.caja{
+  margin: 0 auto;
+  border:2px solid white;
+  width: 600px;
+}
+
+.form{
+margin: 20px;
+}
+
+@media only screen and (max-width: 600px){
+.caja{
+  display:grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  border:none;
+
+}
+
+}
+@media only screen and (max-width: 320px){
+  .caja{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    border: none;
+    
+  }
+}

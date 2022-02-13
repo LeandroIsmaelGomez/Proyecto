@@ -1,0 +1,176 @@
+.h5 {
+  color: white;
+}
+
+.product {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  border: 3px solid white;
+  border-radius: 4px;
+}
+
+.tienda {
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-align: var(--bs-body-text-align);
+  font-weight: bolder;
+  font-family: var(--bs-body-font-family);
+  line-height: var(--bs-body-line-height);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8" "foto9 foto10 foto11 foto12" "foto13 foto14 foto15 foto16";
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+  width: 100%;
+}
+
+.foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+  width: 100%;
+}
+
+.foto3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: foto3;
+  width: 100%;
+}
+
+.foto4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: foto4;
+  width: 100%;
+}
+
+.foto5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto5;
+  width: 100%;
+}
+
+.foto6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto6;
+  width: 100%;
+}
+
+.foto7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: foto7;
+  width: 100%;
+}
+
+.foto8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: foto8;
+  width: 100%;
+}
+
+.foto9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foto9;
+  width: 100%;
+}
+
+.foto10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: foto10;
+  width: 100%;
+}
+
+.foto11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: foto11;
+  width: 100%;
+}
+
+.foto12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: foto12;
+  width: 100%;
+}
+
+.foto13 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: foto13;
+  width: 100%;
+}
+
+.foto14 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: foto14;
+  width: 100%;
+}
+
+.foto15 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: foto15;
+  width: 100%;
+}
+
+.foto16 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: foto16;
+  width: 100%;
+}
+
+@media only screen and (max-width: 905px) {
+  .Grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 foto10" "foto11 foto12" "foto13 foto14" "foto15 foto16";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Grid {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: (auto)[16];
+        grid-template-rows: repeat(16, auto);
+        grid-template-areas: "foto1" "foto2"  "foto3" "foto4" "foto5"  "foto6" "foto7" "foto8" "foto9" "foto10" "foto11"  "foto12" "foto13" "foto14" "foto15" "foto16";
+  }
+}
+/*# sourceMappingURL=parafernalia.css.map */

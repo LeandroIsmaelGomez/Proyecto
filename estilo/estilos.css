@@ -13,21 +13,19 @@ selector{
 }
 
 /* Inicio de index CSS*/
-.navegacion ul li a {
+.navegacion {
   /*esto sirve para poner las secciones de lado o imagenes*/
   padding: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
   border: 3px solid;
   color: whitesmoke;
   border-color: #a9ddff;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 li {
   display: inline-block;
-}
-
-p {
-  font-style: oblique;
 }
 
 .titulo {
@@ -43,28 +41,14 @@ p {
 
 body {
   background-color: #d8e2e2;
-}
-
-.index {
-  font-style: oblique;
-  background-color: white;
-  border-radius: 10px;
-  width: 700px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-body {
   background-image: url("../imagenes/fondogrow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.navegacion {
-  font-family: 'Courier New', Courier, monospace;
-}
-
 footer {
   background-color: royalblue;
+  background-image: url("../imagenes/logo.jpg");
 }
 
 .fondo {
@@ -92,21 +76,28 @@ footer {
   font-style: italic;
 }
 
-.colorProducto {
-  color: thistle;
-  font-style: oblique;
-}
-
 .topvege {
-  margin: -20px 10px 10px 750px;
-  padding: 50px 10px 10px 10px;
+  width: 250px;
+  height: auto;
+  padding: 20px 10px 20px 10px;
   border-radius: 10px;
 }
 
 .melaza {
-  padding: 10px 10px 10px 10px;
-  margin: 30px 10px 10px 750px;
+  width: 200px;
+  height: auto;
+  padding: 20px 10px 20px 10px;
   border-radius: 10px;
+}
+
+.parrafo {
+  letter-spacing: 2px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+  border: 2px solid whitesmoke;
+  padding: 30px;
+  margin: 25px;
 }
 
 strong {
@@ -130,24 +121,49 @@ strong {
   text-align: right;
 }
 
-.listaFuter li a {
-  text-decoration: none;
-
-}
-
 footer {
   background-image: url("../imagenes/logo.jpg");
 }
 
-.text0 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
+.img_grid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: oblique;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2 img {
+  border: 1px solid whitesmoke;
+  width: 37%;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid2 {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+      grid-template-areas: "melaza" "topvege";
 }
 
 /* PRUEBA NUMERO UNO RAMA STYLE ANIMACIONES TRANSICIONES*/
@@ -182,119 +198,145 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 250px;
-  margin-top: 10px;
-  gap: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "img1 img2 img3"
- "img4 img5 img6"
- "img7 img8 img9"
- "img10 img11 img12";
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9" "img10 img11 img12";
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .img1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img1;
+  width: 100%;
 }
 
 .img2 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: img12;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img2;
+  width: 100%;
 }
 
 .img3 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: img3;
+  width: 100%;
 }
 
 .img4 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: img4;
+  width: 100%;
 }
 
 .img5 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: img5;
+  width: 100%;
 }
 
 .img6 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: img6;
+  width: 100%;
 }
 
 .img7 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: img7;
+  width: 100%;
 }
 
 .img8 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: img8;
+  width: 100%;
 }
 
 .img9 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: img9;
+  width: 100%;
 }
 
 .img10 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: img10;
+  width: 100%;
 }
 
 .img11 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: img11;
+  width: 100%;
 }
 
 .img12 {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: img12;
+  width: 100%;
 }
 
-/*
-@media only screen and (max-width: 425px) {
-  nav {
-    background-color: white;
+.card-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-grid {
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 905px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12";
   }
+}
+
+@media only screen and (max-width: 600px) {
   .grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[12];
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas: "img1"
- "img2" 
- "img3"
- "img4"
- "img5" 
- "img6"
- "img7"
- "img8"
- "img9"
- "img10"
- "img11" 
- "img12";
+    -ms-grid-rows: (auto)[12];
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas: "img1" "img2"  "img3" "img4" "img5"  "img6" "img7" "img8" "img9" "img10" "img11"  "img12";
   }
 }
 
-*/
 /* Inicio de Parafernalia*/
 .h5 {
   color: white;
@@ -313,119 +355,224 @@ footer {
 .tienda {
   font-size: 13px;
   font-family: 'Times New Roman', Times, serif;
-  color: violet;
+  color: white;
+  text-align: var(--bs-body-text-align);
+  font-weight: bolder;
+  font-family: var(--bs-body-font-family);
+  line-height: var(--bs-body-line-height);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .Grid {
-  margin-top: 10px;
-  margin-left: 230px;
-  gap: 10px;
+  margin: 60px;
+  gap: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "foto1 foto2 foto3 foto4"
- "foto5 foto6 foto7 foto8"
- "foto9 foto10 foto11 foto12"
- "foto13 foto14 foto15 foto16";
+      grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8" "foto9 foto10 foto11 foto12" "foto13 foto14 foto15 foto16";
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .foto1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: foto1;
+  width: 100%;
 }
 
 .foto2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: foto2;
+  width: 100%;
 }
 
 .foto3 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: foto3;
+  width: 100%;
 }
 
 .foto4 {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: foto4;
+  width: 100%;
 }
 
 .foto5 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: foto5;
+  width: 100%;
 }
 
 .foto6 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: foto6;
+  width: 100%;
 }
 
 .foto7 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: foto7;
+  width: 100%;
 }
 
 .foto8 {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: foto8;
+  width: 100%;
 }
 
 .foto9 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: foto9;
+  width: 100%;
 }
 
 .foto10 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: foto10;
+  width: 100%;
 }
 
 .foto11 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: foto11;
+  width: 100%;
 }
 
 .foto12 {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: foto12;
+  width: 100%;
 }
 
 .foto13 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: foto13;
+  width: 100%;
 }
 
 .foto14 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: foto14;
+  width: 100%;
 }
 
 .foto15 {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: foto15;
+  width: 100%;
 }
 
 .foto16 {
   -ms-grid-row: 4;
   -ms-grid-column: 4;
   grid-area: foto16;
+  width: 100%;
+}
+
+@media only screen and (max-width: 905px) {
+  .Grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 foto10" "foto11 foto12" "foto13 foto14" "foto15 foto16";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Grid {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: (auto)[16];
+        grid-template-rows: repeat(16, auto);
+        grid-template-areas: "foto1" "foto2"  "foto3" "foto4" "foto5"  "foto6" "foto7" "foto8" "foto9" "foto10" "foto11"  "foto12" "foto13" "foto14" "foto15" "foto16";
+  }
+}
+
+/*Inicio de Nosotros*/
+.nosotros {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 30px 10px 10px;
+  padding: 10px 10px 10px;
+  background-color: #e396f7;
+  text-align: center;
+}
+
+.parrafoNosotros {
+  margin: 10px 10px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.ubicacion {
+  margin: 10px 10px 10px;
+  padding: 10px 10px 10px;
+  background-color: #e396f7;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.parrafoNosotro {
+  margin: 10px 10px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.localizacion {
+  text-align: center;
+  color: yellowgreen;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.mapa {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .localizacion {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .localizacion {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .localizacion {
+    padding: 10px;
+  }
 }
 
 /*Inicio Formulario*/
@@ -457,44 +604,47 @@ footer {
 }
 
 .INFO {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/*Inicio de Nosotros*/
-.nosotros {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 30px 10px 10px;
-  padding: 10px 10px 10px;
-  background-color: #e396f7;
-  text-align: center;
-}
-
-.parrafoNosotros {
-  margin: 10px 10px 10px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 10px;
+  padding: 6px 15px 6px 15px;
+  font-size: 30px;
   color: whitesmoke;
+}
+
+#tittle {
+  margin: 0 auto;
+  color: white;
   text-align: center;
 }
 
-.ubicacion {
-  padding: 10px 10px 10px;
-  background-color: #e396f7;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+.caja {
+  margin: 0 auto;
+  border: 2px solid white;
+  width: 600px;
 }
 
-.parrafoNosotro {
-  margin: 10px 10px 10px;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
-  text-align: center;
+.form {
+  margin: 20px;
 }
 
-.localizacion {
-  padding: 10px 10px 10px 650px;
-  text-align: center;
-  color: yellowgreen;
-  font-family: Arial, Helvetica, sans-serif;
+@media only screen and (max-width: 600px) {
+  .caja {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .caja {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    border: none;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
