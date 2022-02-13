@@ -458,41 +458,44 @@ footer{
 
 /*Inicio de Nosotros*/
 
-
+@mixin letras {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .contenedor{
   .nosotros {
-    font-family:'Courier New', Courier, monospace;
+    @include letras;
     margin: 30px 10px 10px;
     padding: 10px 10px 10px;
     background-color: rgb(227, 150, 247);
     text-align: center;
   }
   .parrafoNosotros {
+    @include letras;
     margin: 10px 10px 10px;
-    font-family:'Courier New', Courier, monospace;
     color: whitesmoke;
     text-align: center;
   }
   .parrafoNosotro {
+    @include letras;
     margin: 10px 10px 10px;
-    font-family:'Courier New', Courier, monospace;
     color: whitesmoke;
     text-align: center;
   }
   .localizacion {
+    @include letras;
     text-align: center;
     color: yellowgreen;
-    font-family:'Courier New', Courier, monospace;
   }
   .mapa {
+    @include letras;
     text-align: center;
   }
   .ubicacion {
+    @include letras;
     margin: 10px 10px 10px;
     padding: 10px 10px 10px;
     background-color: rgb(227, 150, 247);
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
   
   }
 }
