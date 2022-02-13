@@ -458,46 +458,46 @@ footer{
 
 /*Inicio de Nosotros*/
 
-.nosotros {
-  font-family:'Courier New', Courier, monospace;
-  margin: 30px 10px 10px;
-  padding: 10px 10px 10px;
-  background-color: rgb(227, 150, 247);
-  text-align: center;
 
+.contenedor{
+  .nosotros {
+    font-family:'Courier New', Courier, monospace;
+    margin: 30px 10px 10px;
+    padding: 10px 10px 10px;
+    background-color: rgb(227, 150, 247);
+    text-align: center;
+  }
+  .parrafoNosotros {
+    margin: 10px 10px 10px;
+    font-family:'Courier New', Courier, monospace;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .parrafoNosotro {
+    margin: 10px 10px 10px;
+    font-family:'Courier New', Courier, monospace;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .localizacion {
+    text-align: center;
+    color: yellowgreen;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .mapa {
+    text-align: center;
+  }
+  .ubicacion {
+    margin: 10px 10px 10px;
+    padding: 10px 10px 10px;
+    background-color: rgb(227, 150, 247);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+  
+  }
 }
 
-.parrafoNosotros {
-  margin: 10px 10px 10px;
-  font-family:'Courier New', Courier, monospace;
-  color: whitesmoke;
-  text-align: center;
-}
 
-.ubicacion {
-  margin: 10px 10px 10px;
-  padding: 10px 10px 10px;
-  background-color: rgb(227, 150, 247);
-  text-align: center;
-  font-family:'Courier New', Courier, monospace;
-
-}
-
-.parrafoNosotro {
-  margin: 10px 10px 10px;
-  font-family:'Courier New', Courier, monospace;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.localizacion {
-  text-align: center;
-  color: yellowgreen;
-  font-family:'Courier New', Courier, monospace;
-}
-.mapa {
-  text-align: center;
-}
 
 @media only screen and (max-width: 600px) {
   .localizacion{
