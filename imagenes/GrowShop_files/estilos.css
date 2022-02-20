@@ -176,7 +176,6 @@ footer {
 
 /* Inicio de productos CSS*/
 .colorProducto {
-  margin-top: 10px;
   color: thistle;
   font-style: oblique;
 }
@@ -314,7 +313,6 @@ footer {
 }
 
 .img-grid {
-  margin-top: 15px;
   width: 300px;
   height: 300px;
 }
