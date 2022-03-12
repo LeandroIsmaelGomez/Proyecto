@@ -67,9 +67,7 @@ text-align: center;
 margin-top: 25px;
 }
 
-.gif2{
-  
-}
+
 
 
 .contenedor_new {
@@ -270,9 +268,16 @@ footer {
   }
 }
 
+@media only screen and (max-width: 600px){
+  .imagen_gif{
+    display: none;
+  }
+  
+}
 
 
 @media only screen and (max-width: 600px) {
+
   .grid2 {
     margin: 0 auto;
     display: flex;
@@ -281,7 +286,6 @@ footer {
 
   grid-template-areas:"melaza"
   "topvege"
-
   ;
 
 }

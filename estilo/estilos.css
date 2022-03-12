@@ -269,6 +269,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .imagen_gif {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .grid2 {
     margin: 0 auto;
     display: -webkit-box;
