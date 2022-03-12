@@ -29,39 +29,72 @@ li {
 }
 
 .titulo {
-  background-image: url("../imagenes/logo.jpg");
   display: block;
   width: 100%;
   left: -700px;
-  color: white;
+  color: #242424;
   font-size: 60px;
   text-align: center;
   margin-bottom: 25px;
 }
 
 body {
-  background-color: #d8e2e2;
-  background-image: url("../imagenes/fondogrow.jpg");
+  background-color: #e6ece6e0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-footer {
-  background-color: royalblue;
-  background-image: url("../imagenes/logo.jpg");
-}
-
 .fondo {
   text-align: center;
-  color: whitesmoke;
+  color: #242424;
   font-family: 'Courier New', Courier, monospace;
   margin-top: 40px;
   border: 3px solid white;
   border-radius: 4px;
 }
 
+.gif {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.contenedor_new {
+  max-width: 1300px;
+  border: solid white;
+  margin: auto;
+  background-color: white;
+}
+
+.contenedor_new .informacion {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+
+.contenedor_new .def_parrafo p {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  max-width: 900px;
+  margin-bottom: 15px;
+}
+
+.contenedor3 {
+  max-width: 1300px;
+  background-color: white;
+  margin: auto;
+}
+
+.contenedor4 {
+  max-width: 1300px;
+  background-color: white;
+  margin: auto;
+}
+
 .ofertas {
-  color: whitesmoke;
+  color: #242424;
   font-style: oblique;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -93,15 +126,23 @@ footer {
 .parrafo {
   letter-spacing: 2px;
   text-align: center;
-  color: whitesmoke;
+  color: #242424;
   font-size: 20px;
-  border: 2px solid whitesmoke;
+  border: 1px solid #242424;
+  border-radius: 5px;
   padding: 30px;
   margin: 25px;
 }
 
-strong {
-  color: white;
+.link {
+  color: #242424;
+  text-decoration: none;
+}
+
+.link :hover {
+  opacity: 0.8;
+  -webkit-transition: all;
+  transition: all;
 }
 
 .imagenes {
@@ -111,18 +152,93 @@ strong {
           align-items: center;
 }
 
-.futer {
-  text-align: center;
-}
-
-.listaFuter {
-  font-size: 16px;
-  font-style: oblique;
-  text-align: right;
-}
-
 footer {
-  background-image: url("../imagenes/logo.jpg");
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #0c2b0f;
+}
+
+.container__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.box__footer .logo img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
 }
 
 .img_grid {
@@ -148,7 +264,7 @@ footer {
 }
 
 .grid2 img {
-  border: 1px solid whitesmoke;
+  border: 1px solid #242424;
   width: 37%;
 }
 
@@ -175,6 +291,21 @@ footer {
 }
 
 /* Inicio de productos CSS*/
+.productos_ {
+  background-color: white;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.hdos {
+  max-width: 1400px;
+  color: #242424;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .colorProducto {
   margin-top: 10px;
   color: thistle;
@@ -185,17 +316,10 @@ footer {
   font-size: 13px;
 }
 
-.hdos {
-  color: white;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  border: 3px solid whitesmoke;
-  border-radius: 4px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
 .grid {
+  background-color: white;
+  max-width: 1400px;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -335,17 +459,40 @@ footer {
         grid-template-columns: 1fr;
     -ms-grid-rows: (auto)[12];
         grid-template-rows: repeat(12, auto);
-        grid-template-areas: "img1" "img2"  "img3" "img4" "img5"  "img6" "img7" "img8" "img9" "img10" "img11"  "img12";
+        grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12";
   }
 }
 
 /* Inicio de Parafernalia*/
+.card-producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #242424;
+}
+
 .h5 {
-  color: white;
+  color: #242424;
+}
+
+.content_new {
+  margin: auto;
+  max-width: 1400px;
+  background-color: white;
 }
 
 .product {
-  color: whitesmoke;
+  color: #242424;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   margin-top: 40px;
@@ -354,10 +501,12 @@ footer {
   border-radius: 4px;
 }
 
-.tienda {
+.tienda2 {
+  margin-bottom: 10px;
+  text-decoration: none;
   font-size: 13px;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  color: #242424;
   text-align: var(--bs-body-text-align);
   font-weight: bolder;
   font-family: var(--bs-body-font-family);
@@ -367,6 +516,8 @@ footer {
 }
 
 .Grid {
+  max-width: 1500px;
+  background-color: white;
   margin: 60px;
   gap: 80px;
   -webkit-box-align: center;
@@ -514,30 +665,40 @@ footer {
         grid-template-columns: 2fr;
     -ms-grid-rows: (auto)[16];
         grid-template-rows: repeat(16, auto);
-        grid-template-areas: "foto1" "foto2"  "foto3" "foto4" "foto5"  "foto6" "foto7" "foto8" "foto9" "foto10" "foto11"  "foto12" "foto13" "foto14" "foto15" "foto16";
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9" "foto10" "foto11" "foto12" "foto13" "foto14" "foto15" "foto16";
   }
 }
 
 /*Inicio de Nosotros*/
+.contenedor2 {
+  max-width: 1400px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contenedor .nosotros {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 30px 10px 10px;
   padding: 10px 10px 10px;
-  background-color: #e396f7;
   text-align: center;
 }
 
 .contenedor .parrafoNosotros {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 10px 10px 10px;
-  color: whitesmoke;
+  color: #242424;
   text-align: center;
 }
 
 .contenedor .parrafoNosotro {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 10px 10px 10px;
-  color: whitesmoke;
+  color: #242424;
   text-align: center;
 }
 
@@ -556,7 +717,6 @@ footer {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 10px 10px 10px;
   padding: 10px 10px 10px;
-  background-color: #e396f7;
   text-align: center;
 }
 
@@ -604,24 +764,33 @@ footer {
 
 .contacto {
   margin-top: 30px;
+  margin-bottom: 20px;
+  color: #242424;
 }
 
 .INFO {
   margin: 10px;
   padding: 6px 15px 6px 15px;
   font-size: 30px;
-  color: whitesmoke;
+  color: #242424;
 }
 
 #tittle {
-  margin: 0 auto;
+  max-width: 500px;
+  background-color: white;
+  margin: auto;
   color: white;
   text-align: center;
 }
 
+.conteiner {
+  background-color: none;
+  margin: auto;
+}
+
 .caja {
   margin: 0 auto;
-  border: 2px solid white;
+  border: 2px solid #242424;
   width: 600px;
 }
 
